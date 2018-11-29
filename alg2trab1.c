@@ -139,5 +139,11 @@ int main()
 	printf("Reprovadas: %d\n",ficha[ganhador].materiasReprovadas);
 	printf("Reprovada ultimo semestre: %d\n",ficha[ganhador].materiasReprovadasUltimoSemestre);
 	
+	// Liberando os espaços da memória
+	for(int i = 0; i < numFichas; i++){
+		free(ficha[i].disciplina);
+	}
+	free(ficha);
+	
 	return 0;
 }
