@@ -10,16 +10,19 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define TAMANHO_MAXIMO 50
+#define TAMANHO_RGA 13
+
 typedef struct Tdisciplina {
-	char nome[50];
+	char nome[TAMANHO_MAXIMO];
 	float nota;
 	int cargaHoraria;
 	int semestre;
 } Tdisciplina;
 
 typedef struct Tficha {
-	char nome[50];
-	char rga[50];
+	char nome[TAMANHO_MAXIMO];
+	char rga[TAMANHO_RGA];
 	int qntDisciplinas;
 	int materiasReprovadas;
 	int materiasReprovadasUltimoSemestre;
@@ -39,8 +42,8 @@ int main()
 	scanf(" %d", &numFichas);
 	
 	//Alocando memória de todas as fichas
-	ficha = (Tficha *) malloc(sizeof(Tficha) * numFichas);
-
+	ficha = malloc(sizeof(Tficha) * numFichas);
+	
 	for(int i = 0; i < numFichas; i++){
 		
 		printf("----------------\n");
@@ -113,10 +116,10 @@ int main()
 		for(int j = 0; j < ficha[i].qntDisciplinas; j++){
 			numerador += (ficha[i].disciplina[j].nota * (float) ficha[i].disciplina[j].cargaHoraria);
 			denominador += ficha[i].disciplina[j].cargaHoraria;
-			printf("%f => %d\n",ficha[i].disciplina[j].nota,ficha[i].disciplina[j].cargaHoraria);
 		}
 		
 		ficha[i].rendimentoEscolar = (numerador / denominador);
+		
 	}
 	
 	// Busca para saber o ganhador
@@ -126,18 +129,21 @@ int main()
 			ganhador = i + 1;
 		}
 	}
-	
+
 	// Imprimindo o ganhador
 	
 	printf("--------------------\n");
 	
 	printf("Nome: %s\n",ficha[ganhador].nome);
-	printf("RGA: %s\n",ficha[ganhador].rga);
 	printf("Rendimento: %f\n",ficha[ganhador].rendimentoEscolar);
+	printf("Reprovações: %d\n",ficha[ganhador].materiasReprovadas);
+	printf("Reprovada no ultimo semestre: %d\n",ficha[ganhador].materiasReprovadasUltimoSemestre);
 	printf("Semestre atual: %d\n",ficha[ganhador].semestreAtual);
-	printf("Disciplinas cursadas: %d\n",ficha[ganhador].qntDisciplinas);
-	printf("Reprovadas: %d\n",ficha[ganhador].materiasReprovadas);
-	printf("Reprovada ultimo semestre: %d\n",ficha[ganhador].materiasReprovadasUltimoSemestre);
+	printf("Sem - Disciplina - Nota - Carga Horária\n");
+	for(int j = 0; j < ficha[ganhador].qntDisciplinas; j++){
+		printf("%d - %s - %.2f - %d\n",ficha[ganhador].disciplina[j].semestre,ficha[ganhador].disciplina[j].nome,ficha[ganhador].disciplina[j].nota,ficha[ganhador].disciplina[j].cargaHoraria);
+	}
+	printf("=============================================\n");
 	
 	// Liberando os espaços da memória
 	for(int i = 0; i < numFichas; i++){

@@ -1,3 +1,13 @@
+/**
+
+* Exercicio 1
+
+* Nome: Marcus Goldschmidt Oliveira
+
+* RGA: 201811310020
+
+**/
+
 #include <stdio.h>
 #include <stdlib.h>
 
