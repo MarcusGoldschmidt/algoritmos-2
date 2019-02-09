@@ -3,7 +3,7 @@
 
 int funcaoR(int valor);
 
-int main()0
+int main()
 {
 	printf(" %d\n", funcaoR(5));
 	
@@ -12,9 +12,9 @@ int main()0
 
 int funcaoR(int valor){
 	if(valor == 1){
-		return 2;
+		return 5;
 	}else{
-		return 10 * funcaoR(valor - 1) + 2;
+		return 10 * funcaoR(valor - 1) + 25;
 	}
 }
 
