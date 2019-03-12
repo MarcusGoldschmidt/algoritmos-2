@@ -1,0 +1,75 @@
+A
+Marcos Garcia
+Analista
+5000.000
+30
+D
+Erica Matos
+Analista
+7000.000
+30
+D
+Joana Maranhão
+Gerente
+20000.000
+40
+D
+Edson Arantes
+Analista
+19000.000
+20
+D
+Ronaldo Nazáreo
+Analista
+22000.000
+40
+D
+Rivaldo dos Santos
+Tecnico
+27000.000
+40
+D
+Marcos Pontes
+Analista
+43200.000
+40
+D
+Pedro Pedreira
+Tecnico
+5007.000
+40
+D
+Anisio Teixera
+Analista
+5008.000
+40
+D
+Marcos Canuto
+Analista
+5009.000
+40
+D
+Vitor Duarte
+Gerente
+60000.000
+40
+A
+Bebeto de Freitas
+Analista
+5000.000
+40
+D
+Aline Barros
+Analista
+9000.000
+40
+D
+Milton Nascimento
+Gerente
+10000.000
+40
+D
+Francisco Duarte
+Analista
+5014.000
+40

@@ -1,3 +1,8 @@
+/* 
+ * MARCUS GOLDSCHMIDT OLIVEIRA
+ * RGA: 201811310020
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

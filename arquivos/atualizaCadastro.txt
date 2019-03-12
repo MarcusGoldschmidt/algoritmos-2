@@ -1,0 +1,55 @@
+A
+Marcos Garcia
+Analista
+5000.000
+30
+A
+Erica Matos
+Analista
+7000.000
+30
+A
+Joana Maranhão
+Gerente
+20000.000
+40
+A
+Edson Arantes
+Analista
+19000.000
+20
+A
+Rivaldo dos Santos
+Tecnico
+27000.000
+40
+A
+Marcos Pontes
+Analista
+43200.000
+40
+A
+Anisio Teixera
+Analista
+5008.000
+40
+A
+Marcos Canuto
+Analista
+5009.000
+40
+A
+Bebeto de Freitas
+Analista
+5000.000
+40
+A
+Aline Barros
+Analista
+9000.000
+40
+A
+Francisco Duarte
+Analista
+5014.000
+40

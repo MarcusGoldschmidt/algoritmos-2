@@ -1,18 +1,19 @@
 #include <stdio.h>
 
 int main () {
-	int x , y, *p;
-	y = 0;
 	
-	p = &y;
-	x = *p;
-	x = 4;
-	(*p)++;
-	--x;
-	(*p) += x;
+	int count = 0;
 	
-	// Print de Ponteiros
-	printf("%X | %d \n",&x, x);
-	printf("%X | %d \n",&y, y);
-	printf("%X | %d \n",&p, *p);
+	float chico = 1.2;
+	float ze = 1.1;
+	
+	do{
+		chico += 0.02;
+		ze += 0.03;
+		
+		count++;
+	}while(chico > ze);
+	
+	printf("COUNT: %d", count);
+	
 }
